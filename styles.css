@@ -1,0 +1,640 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --colorTextos: #666666;
+    --colorBotones: #9ec0a0;
+    --colorEncabezados: #9ec0a0;
+    --colorFondo: #eee;
+    --colorBackground: #ccc;
+    --colorEnlaces: #707070;
+    --colorEnlaceshover: black;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--Textoscolorines);
+    font-size: 1rem;
+    background-color: var(--colorFondo);
+}
+
+/* DEFINIMOS ANCHO CONTENEDOR */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: var(--colorFondo);
+    -border: 1px dotted rgb(125, 125, 125);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ESTILOS HEADER*/
+.menu {
+    display: flex;
+    /* Pone logo y enlaces en fila */
+    justify-content: space-between;
+    /*  Logo a la izquierda, enlaces a la derecha */
+    align-items: center;
+    /*  Centra verticalmente todo */
+    height: 70px;
+    /*  Altura fija del menú */
+}
+
+/* estilos logo */
+.menu__logo {
+    display: flex;
+    align-items: center;
+    /* Centra el logo verticalmente */
+    height: 100%;
+    /*  Ocupa toda la altura del menú (70px) */
+    /* border: 1px dotted rgb(83, 83, 83);   */
+}
+
+.logo__imagen {
+    display: block;
+    /* EVITA espacio fantasma debajo */
+    height: 40px;
+    /* Tamaño fijo para el logo */
+}
+
+
+/* estilos enlaces */
+.enlaces__lista {
+    display: flex;
+    /*  Pone los enlaces en fila (no en columna) */
+    align-items: center;
+
+    list-style: none;
+    /*  Elimina los puntitos de la lista */
+
+    gap: 1rem;
+    /* AÑADE espacio entre enlaces */
+
+    /* border: 1px dotted rgb(83, 83, 83); */
+
+}
+
+
+.enlaces__header {
+    text-decoration: none;
+    /* Quita el subrayado de los enlaces */
+    color: var(--colorEnlaces);
+    /*  Usa variable CSS para el color  Cambia color al pasar mouse */
+    font-weight: 500;
+}
+
+
+.enlaces__header:hover {
+    text-decoration: underline;
+    color: var(--colorEnlaceshover)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ESTILOS HERO full width*/
+
+.herofull {
+    height: 750px;
+    background-image: url(img/pine-watt-2Hzmz15wGik-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+
+    background-attachment: fixed;
+    /*  Esto crea el efecto parallax */
+
+}
+
+.herofull__contenedor {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* el height tiene que estar declarado para align-items */
+    flex-direction: column;
+    color: var(--colorFondo);
+    gap: 1rem;
+}
+
+
+
+
+
+.herofull__titulo {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px #b1b1b180;
+}
+
+
+.herofull__cta {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    background: var(--colorBotones);
+    color: var(--colorEnlaces);
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.herofull__cta:hover {
+    background: var(--colorEnlaces);
+    color: var(--colorFondo);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN */
+
+/* SECCIÓN TESTIMONIOS */
+
+
+.testimoniosB {
+    padding: 2rem 0;
+
+}
+
+
+
+.testimoniosB__contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.testimoniosB__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    max-width: 10rem;
+}
+
+.testimoniosB__titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--colorEncabezados);
+}
+
+.testimoniosB__subtitulo {
+    text-align: center;
+    color: var(--colorTextos);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimoniosB__imagen {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimoniosB__nombre {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 600;
+    color: var(--colorTextos);
+}
+
+
+.testimoniosB__texto {
+    text-align: center;
+    color: var(--colorTextos);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NOTICIAS */
+
+.noticias {
+    padding: 2rem 0;
+}
+
+.noticias__titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--colorEncabezados);
+    margin-bottom: 0.5rem;
+}
+
+.noticias__subtitulo {
+    text-align: center;
+    color: var(--colorTextos);
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.noticias__contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.noticias__card {
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 15rem;
+}
+
+.noticias__card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.noticias__imagen {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.noticias__contenido {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+}
+
+.noticias__titular {
+    font-size: 1.2rem;
+    color: var(--colorEncabezados);
+}
+
+.noticias__texto {
+    color: var(--colorTextos);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-height: 80px;
+    overflow: hidden;
+}
+
+.noticias__enlace {
+    color: var(--colorBotones);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.noticias__enlace:hover {
+    color: var(--colorEnlaceshover);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ESTILOS FOOTER 1 */
+
+
+.footer1 {
+    background-color: #9ec0a0;
+    padding: 3rem 0;
+}
+
+
+.footer1__container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: var(--colorBotones);
+    -border: 1px dotted rgb(125, 125, 125);
+}
+
+
+.footer1__contenido {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+.footer1__contacto {
+    width: 45%;
+}
+
+.footer1__menu {
+    width: 45%;
+}
+
+.footer1__rrss {
+    margin-left: auto;
+}
+
+
+
+
+
+
+.footer1__titulo {
+    color: var(--colorTextos);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer1__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer1__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--colorTextos);
+}
+
+.footer1__item i {
+    width: 20px;
+    color: var(--colorEnlaces);
+}
+
+.footer1__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer1__lista a {
+    color: var(--colorTextos);
+    text-decoration: none;
+}
+
+.footer1__lista a:hover {
+    color: var(--colorFondo);
+    text-decoration: underline;
+}
+
+.footer1__iconos {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer1__iconos a {
+    color: var(--colorTextos);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.footer1__iconos a:hover {
+    color: var(--colorFondo);
+}
+
+.footer1__separador {
+    border: none;
+    height: 1px;
+    background-color: var(--colorTextos);
+    margin: 1rem 0;
+}
+
+.footer1__inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--colorTextos);
+    font-size: 0.9rem;
+}
+
+.footer1__legal a {
+    color: var(--colorTextos);
+    text-decoration: none;
+}
+
+.footer1__legal a:hover {
+    color: var(--colorFondo);
+    text-decoration: underline;
+}
